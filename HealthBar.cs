@@ -8,11 +8,11 @@ public class HealthBar : Bar
 
     private void OnEnable()
     {
-        _player.HealthChange += ChangeValue;
+        _player.HealthChanged += ChangeValue;
     }
 
     private void OnDisable()
     {
-        _player.HealthChange -= ChangeValue;
+        _player.HealthChanged -= ChangeValue;
     }
 }
