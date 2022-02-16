@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     public float CurrentHealth { get; private set; }
 
-    public event UnityAction<float> HealthChange;
+    public event UnityAction<float> HealthChanged;
 
     private void Start()
     {
